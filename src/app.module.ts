@@ -6,7 +6,7 @@ import { UserModule } from './users/user.module';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://Aj_Mah:admin123@cluster0.q7fbsn8.mongodb.net/nest-auth?retryWrites=true&w=majority'), UserModule, AuthModule],
+  imports: [MongooseModule.forRoot('Your-Mongodb_URL'), UserModule, AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
